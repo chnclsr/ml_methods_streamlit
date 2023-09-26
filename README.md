@@ -10,8 +10,15 @@ pip install scikit-learn
 pip install matplotlib
 ```
 
-## Usage
+## Usage - Local
 Run
 ```console
 streamlit run main.py
+```
+
+## Usage - Docker
+
+```console
+docker build -t streamlit_ml_classifier .
+docker run --network host --name container_streamlit -p 8501:8501 -it streamlit_ml_classifier bash
 ```
