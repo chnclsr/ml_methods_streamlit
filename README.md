@@ -22,3 +22,6 @@ Run
 docker build -t streamlit_ml_classifier .
 docker run --network host --name container_streamlit -p 8501:8501 -it streamlit_ml_classifier bash
 ```
+
+## Demo
+Visit [demo](https://autom-coder-ml-methods-streamlit-main-g0wljb.streamlit.app/)
