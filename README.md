@@ -19,8 +19,10 @@ streamlit run main.py
 ## Usage - Docker
 Run
 ```console
-docker build -t streamlit_ml_classifier .
-docker run --network host --name container_streamlit -p 8501:8501 -it streamlit_ml_classifier bash
+# Build a local docker image
+docker build -t <image_name> .
+# Run the image
+docker run -p 8080:8080 <image_name>
 ```
 
 ## Demo
